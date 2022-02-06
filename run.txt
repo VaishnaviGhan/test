@@ -1,0 +1,7 @@
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
+-input /user/root/wc/word_countdata.txt \
+-output /user/root/wcoutputnewsaurav \
+-mapper mapper.py \
+-reducer reducer.py \
+-file /root/mapper.py \
+-file /root/reducer.py
